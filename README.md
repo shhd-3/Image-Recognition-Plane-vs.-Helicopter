@@ -4,7 +4,6 @@ This project demonstrates how to train a custom image classification model using
 - [Prerequisites](#prerequisites)
 - [Project Steps](#project-steps)
 - [Code Implementation](#code-implementation)
-- [License](#license)
 
 ## Prerequisites
 * A computer with an internet connection.
@@ -59,7 +58,8 @@ Update your code with the following changes:
 ### 9. Run and Verify
 After updating the code (see below), click the "Play" button.
 
-*![Insert Image: Screenshot of the output console showing the prediction result]*
+<img width="1912" height="906" alt="لقطة شاشة 2026-07-07 225908" src="https://github.com/user-attachments/assets/e549d77d-b3ff-4e08-b9f7-3cd8450ef983" />
+
 
 ## Code Implementation
 
