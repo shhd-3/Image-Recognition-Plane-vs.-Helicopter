@@ -1,4 +1,4 @@
-# Image-Recognition-Plane-vs.-Helicopter
+<img width="1912" height="967" alt="image" src="https://github.com/user-attachments/assets/75baca14-613a-4eaa-9223-886a43a02847" /># Image-Recognition-Plane-vs.-Helicopter
 This project demonstrates how to train a custom image classification model using [Teachable Machine by Google](https://teachablemachine.withgoogle.com/) and deploy it in a Python environment using Google Colab.
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -38,10 +38,18 @@ Click **Export Model**, select **TensorFlow** > **Keras**, and click **Download 
 ### 6. Setup in Google Colab
 1. Open [Google Colab](https://colab.research.google.com/) and create a **New Notebook**.
 2. Paste the code into a cell.
-*![Insert Image: Screenshot of the Google Colab interface]*
+<img width="1912" height="908" alt="لقطة شاشة 2026-07-07 223842" src="https://github.com/user-attachments/assets/28160f60-d0e1-4989-aac1-04a07f10622e" />
 
-### 7. Run and Verify
+### 7. Code Modifications
+Update your code with the following changes:
+* Add import tf_keras as tk after the third line.
+* Change load_model to tk.models.load_model.
+* Update the image path to your test image.
+*![Insert Image: Screenshot of code changes]*
+
+### 8. Run and Verify
 After updating the code (see below), click the "Play" button.
+
 *![Insert Image: Screenshot of the output console showing the prediction result]*
 
 ## Code Implementation
