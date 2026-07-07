@@ -1,2 +1,97 @@
 # Image-Recognition-Plane-vs.-Helicopter
 This project demonstrates how to train a custom image classification model using [Teachable Machine by Google](https://teachablemachine.withgoogle.com/) and deploy it in a Python environment using Google Colab.
+# Image Recognition: Plane vs. Helicopter
+
+This project demonstrates how to train a custom image classification model using [Teachable Machine by Google](https://teachablemachine.withgoogle.com/) and deploy it in a Python environment using Google Colab.
+
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Project Steps](#project-steps)
+- [Code Implementation](#code-implementation)
+- [License](#license)
+
+## Prerequisites
+* A computer with an internet connection.
+* A collection of airplane and helicopter images.
+* A Google account (for Google Colab).
+
+## Project Steps
+
+### 1. Initialize Project
+Navigate to [Teachable Machine](https://teachablemachine.withgoogle.com/), click **Get Started**, then select **Image Project** > **Standard image model**.
+
+### 2. Define Classes
+Create two distinct classes:
+* **Class 1:** "Plane"
+* **Class 2:** "Helicopter"
+*![Insert Image: Screenshot of the class setup interface]*
+
+### 3. Upload Training Data
+Upload your images into their respective folders. 
+> **Note:** The accuracy of your model directly depends on the quantity and variety of images you provide.
+*![Insert Image: Screenshot of images uploaded into the classes]*
+
+### 4. Train and Test
+Click **Train Model**. Once finished, ensure you change the input setting from **Webcam** to **File** to test with your own image.
+*![Insert Image: Screenshot of the 'Preview' panel in file mode]*
+
+### 5. Export the Model
+Click **Export Model**, select **TensorFlow** > **Keras**, and click **Download my model**. Copy the provided starter code.
+*![Insert Image: Screenshot of the Export model options]*
+
+### 6. Setup in Google Colab
+1. Open [Google Colab](https://colab.research.google.com/) and create a **New Notebook**.
+2. Paste the code into a cell.
+*![Insert Image: Screenshot of the Google Colab interface]*
+
+### 7. Run and Verify
+After updating the code (see below), click the "Play" button.
+*![Insert Image: Screenshot of the output console showing the prediction result]*
+
+## Code Implementation
+
+Ensure you have updated the code to include `tf_keras` as shown below:
+
+```python
+from keras.models import load_model
+from PIL import Image, ImageOps
+import numpy as np
+import tf_keras as tk 
+
+# Disable scientific notation for clarity
+np.set_printoptions(suppress=True)
+
+# Load the model
+model = tk.models.load_model("keras_model.h5", compile=False)
+
+# Load the labels
+class_names = open("labels.txt", "r").readlines()
+
+# Create the array of the right shape
+data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
+
+# Replace this with the path to your test image
+image = Image.open("31.jpg").convert("RGB")
+
+# Resizing and cropping
+size = (224, 224)
+image = ImageOps.fit(image, size, Image.Resampling.LANCZOS)
+
+# Turn into numpy array
+image_array = np.asarray(image)
+
+# Normalize
+normalized_image_array = (image_array.astype(np.float32) / 127.5) - 1
+
+# Load into array
+data[0] = normalized_image_array
+
+# Predict
+prediction = model.predict(data)
+index = np.argmax(prediction)
+class_name = class_names[index]
+confidence_score = prediction[0][index]
+
+# Print prediction
+print("Class:", class_name[2:], end="")
+print("Confidence Score:", confidence_score)
