@@ -37,7 +37,7 @@ Click **Export Model**, select **TensorFlow** > **Keras**, and click **Download 
 ### 6. Setup in Google Colab
 1. Open [Google Colab](https://colab.research.google.com/) and create a **New Notebook**.
 2. Paste the code into a cell.
-<img width="1912" height="908" alt="لقطة شاشة 2026-07-07 223842" src="https://github.com/user-attachments/assets/28160f60-d0e1-4989-aac1-04a07f10622e" />
+<img width="1917" height="908" alt="لقطة شاشة 2026-07-08 002513" src="https://github.com/user-attachments/assets/ee411cc0-38d1-43b2-a32b-98846a90cef7" />
 
 ### 7. Upload Project Files
 Before running the code, you must upload the necessary files to the Google Colab session:
