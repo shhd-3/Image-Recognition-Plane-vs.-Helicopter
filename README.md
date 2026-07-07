@@ -28,7 +28,8 @@ Upload your images into their respective folders.
 
 ### 4. Train and Test
 Click **Train Model**. Once finished, ensure you change the input setting from **Webcam** to **File** to test with your own image.
-*![Insert Image: Screenshot of the 'Preview' panel in file mode]*
+<img width="1913" height="968" alt="لقطة شاشة 2026-07-07 215859" src="https://github.com/user-attachments/assets/686711f8-34b4-4f85-a72d-fb48ad85a911" />
+After testing, the model successfully recognized the picture of the plane.
 
 ### 5. Export the Model
 Click **Export Model**, select **TensorFlow** > **Keras**, and click **Download my model**. Copy the provided starter code.
