@@ -18,12 +18,13 @@ Navigate to [Teachable Machine](https://teachablemachine.withgoogle.com/), click
 Create two distinct classes:
 * **Class 1:** "Plane"
 * **Class 2:** "Helicopter"
-* <img width="1906" height="965" alt="لقطة شاشة 2026-07-07 215826" src="https://github.com/user-attachments/assets/294b00b9-c6ec-4506-a4c7-ebc094e92942" />
+<img width="1912" height="967" alt="لقطة شاشة 2026-07-07 233202" src="https://github.com/user-attachments/assets/c74d2a30-e330-4dc4-bef2-a48cbb1803d0" />
 
 ### 3. Upload Training Data
 Upload your images into their respective folders. 
 > **Note:** The accuracy of your model directly depends on the quantity and variety of images you provide.
-*![Insert Image: Screenshot of images uploaded into the classes]*
+> <img width="1906" height="965" alt="لقطة شاشة 2026-07-07 215826" src="https://github.com/user-attachments/assets/082392a9-c7b5-426f-8913-7877b50f606c" />
+
 
 ### 4. Train and Test
 Click **Train Model**. Once finished, ensure you change the input setting from **Webcam** to **File** to test with your own image.
