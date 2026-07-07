@@ -18,7 +18,7 @@ Navigate to [Teachable Machine](https://teachablemachine.withgoogle.com/), click
 Create two distinct classes:
 * **Class 1:** "Plane"
 * **Class 2:** "Helicopter"
-*![Insert Image: Screenshot of the class setup interface]*
+* <img width="1906" height="965" alt="لقطة شاشة 2026-07-07 215826" src="https://github.com/user-attachments/assets/294b00b9-c6ec-4506-a4c7-ebc094e92942" />
 
 ### 3. Upload Training Data
 Upload your images into their respective folders. 
