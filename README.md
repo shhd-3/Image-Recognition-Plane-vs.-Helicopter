@@ -33,7 +33,7 @@ After testing, the model successfully recognized the picture of the plane.
 
 ### 5. Export the Model
 Click **Export Model**, select **TensorFlow** > **Keras**, and click **Download my model**. Copy the provided starter code.
-*![Insert Image: Screenshot of the Export model options]*
+<img width="1912" height="970" alt="لقطة شاشة 2026-07-07 215919" src="https://github.com/user-attachments/assets/3d52ea9f-7c53-4e96-a772-d4e51db63656" />
 
 ### 6. Setup in Google Colab
 1. Open [Google Colab](https://colab.research.google.com/) and create a **New Notebook**.
