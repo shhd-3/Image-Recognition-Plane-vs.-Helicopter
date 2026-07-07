@@ -1,9 +1,5 @@
 # Image-Recognition-Plane-vs.-Helicopter
 This project demonstrates how to train a custom image classification model using [Teachable Machine by Google](https://teachablemachine.withgoogle.com/) and deploy it in a Python environment using Google Colab.
-# Image Recognition: Plane vs. Helicopter
-
-This project demonstrates how to train a custom image classification model using [Teachable Machine by Google](https://teachablemachine.withgoogle.com/) and deploy it in a Python environment using Google Colab.
-
 ## Table of Contents
 - [Prerequisites](#prerequisites)
 - [Project Steps](#project-steps)
@@ -13,8 +9,6 @@ This project demonstrates how to train a custom image classification model using
 ## Prerequisites
 * A computer with an internet connection.
 * A collection of airplane and helicopter images.
-* A Google account (for Google Colab).
-
 ## Project Steps
 
 ### 1. Initialize Project
