@@ -42,11 +42,12 @@ Click **Export Model**, select **TensorFlow** > **Keras**, and click **Download 
 
 ### 7. Code Modifications
 Update your code with the following changes:
-* Add import tf_keras as tk after the third line.
-* Change load_model to tk.models.load_model.
+* Add "import tf_keras as tk" after the third line.
+* Change "load_model" to "tk.models.load_model".
 * Update the image path to your test image.
-* 
-*![Insert Image: Screenshot of code changes]*
+* <img width="897" height="712" alt="لقطة شاشة 2026-07-08 000127" src="https://github.com/user-attachments/assets/7aff39ed-ec74-4ed3-b2fb-706ba4f8fc2d" />
+* <img width="882" height="710" alt="لقطة شاشة 2026-07-08 000412" src="https://github.com/user-attachments/assets/e04a276a-2e95-4efc-b54d-e38b38d8ae0b" />
+*<img width="1272" height="702" alt="لقطة شاشة 2026-07-08 000508" src="https://github.com/user-attachments/assets/5abec03a-a5bf-4a6a-9fb3-869c5d4c4849" />
 
 ### 8. Run and Verify
 After updating the code (see below), click the "Play" button.
